@@ -16,7 +16,7 @@ user_preferences = {}  # Store user preferences (chat_id -> time in HH:MM)
 
 @bot.message_handler(commands=['start'])
 def handle_start(message):
-    welcome_text = "Welcome to CheerBot! 🌟\nI’ll send you daily affirmations to keep you motivated. Created with love by Srushti!"
+    welcome_text = "Welcome to CheerBot! 🌟\nI’ll send you daily affirmations to keep you motivated."
     bot.send_message(message.chat.id, welcome_text)
 
     # Ask the user when they want affirmations
